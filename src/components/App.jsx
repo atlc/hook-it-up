@@ -5,8 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 import Logo from './Logo';
-import Films from './api/Films';
-import FilmByID from './api/FilmByID';
+import TodoList from './api/TodoList';
 
 class App extends Component {
     render() {
@@ -18,15 +17,16 @@ class App extends Component {
                             <Link to="/">
                                 <Button variant="dark" style={{margin: "10px"}}>Home</Button>
                             </Link>
-                            <Link to="/films">
-                                <Button variant="dark" style={{margin: "10px"}}>Films</Button>
+                            <Link to="/todo">
+                                <Button variant="dark" style={{margin: "10px"}}>Todo List</Button>
                             </Link>
                         </Row>
+                        <hr />
                         <Row>
                             <Switch>
                                 <Route exact path="/" component={Logo} />
-                                <Route exact path="/films" component={Films} />
-                                <Route path="/films/:id" component={FilmByID} />
+                                <Route exact path="/todo" component={TodoList} />
+                                {/* <Route path="/films/:id" component={FilmByID} /> */}
                             </Switch>
                         </Row>
                     </>
