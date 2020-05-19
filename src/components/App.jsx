@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
+import Logo from './Logo';
 import Films from './api/Films';
 import FilmByID from './api/FilmByID';
 
